@@ -1,0 +1,353 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"veloc",
+				"velocityX"
+			],
+			[
+				"place",
+				"placeholders"
+			],
+			[
+				"vector",
+				"Vector2f"
+			],
+			[
+				"velo",
+				"velocityX"
+			],
+			[
+				"plha",
+				"placeholders"
+			],
+			[
+				"pla",
+				"placeholder"
+			],
+			[
+				"ke",
+				"keystates"
+			],
+			[
+				"get",
+				"getLength"
+			],
+			[
+				"Coll",
+				"CollidesWith"
+			],
+			[
+				"balldir",
+				"balldiry"
+			],
+			[
+				"balld",
+				"balldiry"
+			],
+			[
+				"p2",
+				"p2xpos"
+			],
+			[
+				"vec",
+				"Vector2f"
+			],
+			[
+				"plat",
+				"platform1"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/Entity.cpp",
+			"settings":
+			{
+				"buffer_size": 1746,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main.cpp",
+			"settings":
+			{
+				"buffer_size": 5182,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				":",
+				":e - Revert"
+			],
+			[
+				"package control:insta",
+				"Package Control: Install Package"
+			],
+			[
+				"packageres",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/siobhan/CodeProj/C++/New Folder",
+		"/home/siobhan/CodeProj/C++/New Folder/include",
+		"/home/siobhan/CodeProj/C++/New Folder/src"
+	],
+	"file_history":
+	[
+		"/home/siobhan/CodeProj/C++/New Folder/SDL2pla.sublime-workspace",
+		"/home/siobhan/CodeProj/C++/New Folder/src/Math.cpp",
+		"/home/siobhan/CodeProj/C++/sdl2test/include/Entity.hpp",
+		"/home/siobhan/CodeProj/C++/sdl2test/src/Math.cpp",
+		"/home/siobhan/CodeProj/C++/sdl2test/Entity.o",
+		"/home/siobhan/CodeProj/C++/sdl2test/src/Entity.cpp",
+		"/home/siobhan/CodeProj/C++/sdl2test/src/RenderWindow.cpp",
+		"/home/siobhan/CodeProj/C++/sdl2test/include/RenderWindow.hpp",
+		"/home/siobhan/CodeProj/C++/sdl2test/src/main.cpp",
+		"/home/siobhan/CodeProj/C++/sdl2test/bin/debug/main",
+		"/home/siobhan/CodeProj/C++/sdl2test/bin/debug/main.o"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"entities",
+			"entities[2]",
+			"balldirx",
+			"getPos",
+			"1ypos",
+			"pos",
+			"32",
+			"64",
+			"0.0",
+			"SDL_"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/Entity.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1746,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								786,
+								786
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 687.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/main.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2964,
+								2964
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1525.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 135.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Debug",
+	"project": "SDL2pla.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 155.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
