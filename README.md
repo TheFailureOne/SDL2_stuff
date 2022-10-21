@@ -1,4 +1,4 @@
-# SDL2_stuff
+# SDL2 stuff
 Stuff I made in SDL2
 Many things (like collissions) I made by myself without any outside help or tutorials or guides. 
 This is mainly a project made for me to familiarize myself better with stuff and get better
