@@ -73,13 +73,1373 @@
 			}
 		},
 		{
+			"file": "include/Entity.hpp",
+			"settings":
+			{
+				"buffer_size": 583,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"cut",
+					{
+						"event":
+						{
+							"modifier_keys":
+							{
+							},
+							"x": 249.5,
+							"y": 497.5
+						}
+					},
+					"AQAAAAwCAAAAAAAADAIAAAAAAAANAAAAVmVjdG9yMmYgcG9zOw",
+					"AQAAAAAAAAABAAAAGQIAAAAAAAAMAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					4,
+					2,
+					"left_delete",
+					null,
+					"AgAAAAsCAAAAAAAACwIAAAAAAAABAAAACQoCAAAAAAAACgIAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAADAIAAAAAAAAMAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAAIEAAAAAAAAAggAAAAAAAAAAAAAAggAAAAAAAACDAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAgQAAAAAAAACBAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"paste",
+					{
+						"event":
+						{
+							"modifier_keys":
+							{
+							},
+							"x": 345.5,
+							"y": 234.5
+						}
+					},
+					"AQAAAIMAAAAAAAAAkAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAgwAAAAAAAACDAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					1,
+					"cut",
+					{
+						"event":
+						{
+							"modifier_keys":
+							{
+								"super": true
+							},
+							"x": 260.5,
+							"y": 183.5
+						}
+					},
+					"AQAAAIIAAAAAAAAAggAAAAAAAAAOAAAACVZlY3RvcjJmIHBvczs",
+					"AQAAAAAAAAABAAAAkAAAAAAAAACCAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					12,
+					1,
+					"left_delete",
+					null,
+					"AQAAAIEAAAAAAAAAgQAAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAggAAAAAAAACCAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AgAAAAoCAAAAAAAACwIAAAAAAAAAAAAACwIAAAAAAAAMAgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAACgIAAAAAAAAKAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAsCAAAAAAAACwIAAAAAAAABAAAACQ",
+					"AQAAAAAAAAABAAAADAIAAAAAAAAMAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					17,
+					1,
+					"paste",
+					{
+						"event":
+						{
+							"modifier_keys":
+							{
+							},
+							"x": 285.5,
+							"y": 451.5
+						}
+					},
+					"AQAAAAsCAAAAAAAAGQIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAACwIAAAAAAAALAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					37,
+					1,
+					"sequence",
+					{
+						"commands":
+						[
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"cut",
+								{
+									"event":
+									{
+										"modifier_keys":
+										{
+										},
+										"x": 215.5,
+										"y": 454.5
+									}
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "\n"
+								}
+							],
+							[
+								"paste",
+								{
+									"event":
+									{
+										"modifier_keys":
+										{
+										},
+										"x": 318.5,
+										"y": 181.5
+									}
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"exit_insert_mode",
+								null
+							]
+						]
+					},
+					"BgAAAAsCAAAAAAAACwIAAAAAAAAOAAAACVZlY3RvcjJmIHBvczsKAgAAAAAAAAoCAAAAAAAAAQAAAAqBAAAAAAAAAIIAAAAAAAAAAAAAAIIAAAAAAAAAgwAAAAAAAAAAAAAAgwAAAAAAAACRAAAAAAAAAAAAAACDAAAAAAAAAIMAAAAAAAAAAQAAAAk",
+					"AQAAAAAAAAABAAAAGAIAAAAAAAAYAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					59,
+					1,
+					"sequence",
+					{
+						"commands":
+						[
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"cut",
+								{
+									"event":
+									{
+										"modifier_keys":
+										{
+										},
+										"x": 238.5,
+										"y": 157.5
+									}
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "\n"
+								}
+							],
+							[
+								"paste",
+								{
+									"event":
+									{
+										"modifier_keys":
+										{
+										},
+										"x": 378.5,
+										"y": 429.5
+									}
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": false
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": false
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": false
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": false
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": false
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": false
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": false
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": false
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": false
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": false
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": false
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": false
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": false
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": false
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"exit_insert_mode",
+								null
+							]
+						]
+					},
+					"BgAAAIIAAAAAAAAAggAAAAAAAAAOAAAACVZlY3RvcjJmIHBvczuBAAAAAAAAAIEAAAAAAAAAAQAAAAoKAgAAAAAAAAsCAAAAAAAAAAAAAAsCAAAAAAAADAIAAAAAAAAAAAAADAIAAAAAAAAaAgAAAAAAAAAAAAAMAgAAAAAAAAwCAAAAAAAAAQAAAAk",
+					"AQAAAAAAAAABAAAAjwAAAAAAAACPAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
 			"file": "src/main.cpp",
 			"settings":
 			{
-				"buffer_size": 5182,
+				"buffer_size": 5205,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
-			}
+			},
+			"undo_stack":
+			[
+				[
+					163,
+					1,
+					"sequence",
+					{
+						"commands":
+						[
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"insert",
+								{
+									"characters": "\n\n"
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "std::vector"
+								}
+							],
+							[
+								"insert",
+								{
+									"characters": "<Entity>"
+								}
+							],
+							[
+								"insert",
+								{
+									"characters": " e"
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": " "
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "ent"
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "CollBox"
+								}
+							],
+							[
+								"insert",
+								{
+									"characters": " "
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": " ="
+								}
+							],
+							[
+								"insert",
+								{
+									"characters": " "
+								}
+							],
+							[
+								"insert_snippet",
+								{
+									"contents": "[$0]"
+								}
+							],
+							[
+								"run_macro_file",
+								{
+									"file": "res://Packages/Default/Delete Left Right.sublime-macro"
+								}
+							],
+							[
+								"insert_snippet",
+								{
+									"contents": "{$0}"
+								}
+							],
+							[
+								"cut",
+								{
+									"event":
+									{
+										"modifier_keys":
+										{
+										},
+										"x": 826.5,
+										"y": 262.5
+									}
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": ")"
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "}"
+								}
+							],
+							[
+								"move",
+								{
+									"by": "lines",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "lines",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "lines",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "lines",
+									"forward": false
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": false
+								}
+							],
+							[
+								"paste",
+								{
+									"event":
+									{
+										"modifier_keys":
+										{
+										},
+										"x": 498.5,
+										"y": 231.5
+									}
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": false
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": false
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "   "
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "lines",
+									"forward": true
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "   "
+								}
+							],
+							[
+								"move",
+								{
+									"by": "lines",
+									"forward": true
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "    "
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"exit_insert_mode",
+								null
+							]
+						]
+					},
+					"WgAAAKMHAAAAAAAApAcAAAAAAAAAAAAApAcAAAAAAACtBwAAAAAAAAAAAACtBwAAAAAAAK4HAAAAAAAAAAAAAK4HAAAAAAAAtwcAAAAAAAAAAAAApAcAAAAAAACkBwAAAAAAAAkAAAAJCQkJCQkJCQmtBwAAAAAAAK0HAAAAAAAAAQAAAAmsBwAAAAAAAKwHAAAAAAAAAQAAAAmrBwAAAAAAAKsHAAAAAAAAAQAAAAmqBwAAAAAAAKoHAAAAAAAAAQAAAAmpBwAAAAAAAKkHAAAAAAAAAQAAAAmoBwAAAAAAAKgHAAAAAAAAAQAAAAmnBwAAAAAAAKcHAAAAAAAAAQAAAAmmBwAAAAAAAKYHAAAAAAAAAQAAAAmmBwAAAAAAAKcHAAAAAAAAAAAAAKcHAAAAAAAAqAcAAAAAAAAAAAAAqAcAAAAAAACpBwAAAAAAAAAAAACpBwAAAAAAAKoHAAAAAAAAAAAAAKoHAAAAAAAAqwcAAAAAAAAAAAAAqwcAAAAAAACsBwAAAAAAAAAAAACsBwAAAAAAAK0HAAAAAAAAAAAAAK0HAAAAAAAArgcAAAAAAAAAAAAArgcAAAAAAACvBwAAAAAAAAAAAACvBwAAAAAAALAHAAAAAAAAAAAAALAHAAAAAAAAsQcAAAAAAAAAAAAAsQcAAAAAAACyBwAAAAAAAAAAAACyBwAAAAAAALMHAAAAAAAAAAAAALMHAAAAAAAAtAcAAAAAAAAAAAAAtAcAAAAAAAC1BwAAAAAAAAAAAAC1BwAAAAAAALYHAAAAAAAAAAAAALYHAAAAAAAAtwcAAAAAAAAAAAAAtwcAAAAAAAC4BwAAAAAAAAAAAAC4BwAAAAAAALkHAAAAAAAAAAAAALkHAAAAAAAAugcAAAAAAAAAAAAAugcAAAAAAAC7BwAAAAAAAAAAAAC6BwAAAAAAALoHAAAAAAAAAQAAAGW6BwAAAAAAALsHAAAAAAAAAAAAALoHAAAAAAAAugcAAAAAAAABAAAAILoHAAAAAAAAuwcAAAAAAAAAAAAAuwcAAAAAAAC8BwAAAAAAAAAAAAC8BwAAAAAAAL0HAAAAAAAAAAAAALwHAAAAAAAAvAcAAAAAAAABAAAAdLsHAAAAAAAAuwcAAAAAAAABAAAAbroHAAAAAAAAugcAAAAAAAABAAAAZboHAAAAAAAAuwcAAAAAAAAAAAAAuwcAAAAAAAC8BwAAAAAAAAAAAAC8BwAAAAAAAL0HAAAAAAAAAAAAAL0HAAAAAAAAvgcAAAAAAAAAAAAAvgcAAAAAAAC/BwAAAAAAAAAAAAC/BwAAAAAAAMAHAAAAAAAAAAAAAMAHAAAAAAAAwQcAAAAAAAAAAAAAwQcAAAAAAADCBwAAAAAAAAAAAADBBwAAAAAAAMEHAAAAAAAAAQAAACDBBwAAAAAAAMIHAAAAAAAAAAAAAMIHAAAAAAAAwwcAAAAAAAAAAAAAwwcAAAAAAADEBwAAAAAAAAAAAADEBwAAAAAAAMYHAAAAAAAAAAAAAMQHAAAAAAAAxAcAAAAAAAABAAAAW8QHAAAAAAAAxAcAAAAAAAABAAAAXcQHAAAAAAAAxgcAAAAAAAAAAAAAwgYAAAAAAADCBgAAAAAAAOEAAABFbnRpdHkoVmVjdG9yMmYoYmFsbHgrMTAsIGJhbGx5KSwgNSwgMTAsIG5vdGhpbmcpLAoJCQkJCQkJCQlFbnRpdHkoVmVjdG9yMmYoYmFsbHgsIGJhbGx5KSwgNSwgMTAsIG5vdGhpbmcpLAoJCQkJCQkJCQlFbnRpdHkoVmVjdG9yMmYoYmFsbHgsIGJhbGx5KzEwKSwgMTAsIDUsIG5vdGhpbmcpLAoJCQkJCQkJCQlFbnRpdHkoVmVjdG9yMmYoYmFsbHgsIGJhbGx5KSwgMTAsIDUsIG5vdGhpbmcpfTvBBgAAAAAAAMEGAAAAAAAAAQAAAAnABgAAAAAAAMAGAAAAAAAAAQAAAAm/BgAAAAAAAL8GAAAAAAAAAQAAAAm+BgAAAAAAAL4GAAAAAAAAAQAAAAm9BgAAAAAAAL0GAAAAAAAAAQAAAAm8BgAAAAAAALwGAAAAAAAAAQAAAAm7BgAAAAAAALsGAAAAAAAAAQAAAAm6BgAAAAAAALoGAAAAAAAAAQAAAAm5BgAAAAAAALkGAAAAAAAAAQAAAAm4BgAAAAAAALgGAAAAAAAAAQAAAAq3BgAAAAAAALcGAAAAAAAAAQAAACy3BgAAAAAAALgGAAAAAAAAAAAAALcGAAAAAAAAtwYAAAAAAAABAAAAKbcGAAAAAAAAuAYAAAAAAAAAAAAA2gYAAAAAAAC7BwAAAAAAAAAAAAC7BwAAAAAAALsHAAAAAAAAAQAAAH0VBwAAAAAAABUHAAAAAAAAAQAAAAkVBwAAAAAAABYHAAAAAAAAAAAAABYHAAAAAAAAFwcAAAAAAAAAAAAAFwcAAAAAAAAYBwAAAAAAAAAAAABQBwAAAAAAAFAHAAAAAAAAAQAAAAlQBwAAAAAAAFEHAAAAAAAAAAAAAFEHAAAAAAAAUgcAAAAAAAAAAAAAUgcAAAAAAABTBwAAAAAAAAAAAACOBwAAAAAAAI4HAAAAAAAAAQAAAAmOBwAAAAAAAI8HAAAAAAAAAAAAAI8HAAAAAAAAkAcAAAAAAAAAAAAAkAcAAAAAAACRBwAAAAAAAAAAAACRBwAAAAAAAJIHAAAAAAAAAAAAAJEHAAAAAAAAkQcAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAogcAAAAAAACiBwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					251,
+					1,
+					"sequence",
+					{
+						"commands":
+						[
+							[
+								"insert",
+								{
+									"characters": "Colb"
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "lBox"
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "0"
+								}
+							],
+							[
+								"move",
+								{
+									"by": "lines",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": false
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "Collb"
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "Box"
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "1"
+								}
+							],
+							[
+								"move",
+								{
+									"by": "lines",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": false
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": false
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "CollBox"
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "2"
+								}
+							],
+							[
+								"move",
+								{
+									"by": "lines",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "3"
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": false
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": false
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "CollBox"
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": false
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": false
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "coll"
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "Collb"
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "Box"
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "0"
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "3"
+								}
+							],
+							[
+								"insert",
+								{
+									"characters": "CollBox"
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "2"
+								}
+							],
+							[
+								"insert",
+								{
+									"characters": "CollBox"
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "1"
+								}
+							],
+							[
+								"insert",
+								{
+									"characters": "CollBox"
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "0"
+								}
+							],
+							[
+								"exit_insert_mode",
+								null
+							]
+						]
+					},
+					"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"
+				],
+				[
+					256,
+					1,
+					"sequence",
+					{
+						"commands":
+						[
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"insert",
+								{
+									"characters": ";"
+								}
+							],
+							[
+								"exit_insert_mode",
+								null
+							]
+						]
+					},
+					"AQAAALgGAAAAAAAAuQYAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAtwYAAAAAAAC3BgAAAAAAAAAAAAAAAPC/"
+				]
+			]
 		}
 	],
 	"build_system": "",
@@ -138,12 +1498,13 @@
 	},
 	"expanded_folders":
 	[
-		"/home/siobhan/CodeProj/C++/New Folder",
-		"/home/siobhan/CodeProj/C++/New Folder/include",
-		"/home/siobhan/CodeProj/C++/New Folder/src"
+		"/home/siobhan/Documents/GitHub/SDL2_stuf",
+		"/home/siobhan/Documents/GitHub/SDL2_stuf/include",
+		"/home/siobhan/Documents/GitHub/SDL2_stuf/src"
 	],
 	"file_history":
 	[
+		"/home/siobhan/Documents/GitHub/SDL2_stuf/src/main.cpp",
 		"/home/siobhan/CodeProj/C++/New Folder/SDL2pla.sublime-workspace",
 		"/home/siobhan/CodeProj/C++/New Folder/src/Math.cpp",
 		"/home/siobhan/CodeProj/C++/sdl2test/include/Entity.hpp",
@@ -191,15 +1552,16 @@
 		[
 		],
 		"reverse": false,
+		"scrollbar_highlights": true,
 		"show_context": true,
 		"use_buffer2": true,
+		"use_gitignore": true,
 		"whole_word": false,
 		"wrap": true
 	},
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
 				{
@@ -226,39 +1588,74 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 687.0,
+						"translation.y": 1186.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/main.cpp",
+					"file": "include/Entity.hpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5182,
+						"buffer_size": 583,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2964,
-								2964
+								536,
+								536
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1525.0,
+						"translation.y": 76.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/main.cpp",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5205,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1720,
+								1720
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 813.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"stack_multiselect": false,
 					"type": "text"
 				}
 			]

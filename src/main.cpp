@@ -55,11 +55,12 @@ int main(int argv, char* args[])
 	int ballx = 0;
 	int bally = 0;
 	int placeholdersIN = 0;
-	std::vector<Entity> entities = {Entity(Vector2f(ballx, bally), 10, 10, pixel),
-									Entity(Vector2f(ballx+10, bally), 5, 10, nothing),
-									Entity(Vector2f(ballx, bally), 5, 10, nothing),
-									Entity(Vector2f(ballx, bally+10), 10, 5, nothing),
-									Entity(Vector2f(ballx, bally), 10, 5, nothing)};
+	std::vector<Entity> entities = {Entity(Vector2f(ballx, bally), 10, 10, pixel)};
+
+	std::vector<Entity> CollBox = {Entity(Vector2f(ballx+10, bally), 5, 10, nothing),
+								   Entity(Vector2f(ballx, bally), 5, 10, nothing),
+								   Entity(Vector2f(ballx, bally+10), 10, 5, nothing),
+								   Entity(Vector2f(ballx, bally), 10, 5, nothing)};
 
 	std::vector<Entity> placeholders = {Entity(Vector2f(100, 100), 50, 50, pixel)};
 	std::vector<int> phX;
@@ -91,10 +92,10 @@ int main(int argv, char* args[])
 			ballx += velocityX;
 			bally += velocityY;
 			entities[0] = Entity(Vector2f(ballx, bally), 10, 10, pixel);
-			entities[1] = Entity(Vector2f(ballx+10, bally+1), 5, 9, nothing);
-			entities[2] = Entity(Vector2f(ballx-5, bally+1), 5, 9, nothing);
-			entities[3] = Entity(Vector2f(ballx+1, bally+10), 9, 5, nothing);
-			entities[4] = Entity(Vector2f(ballx+1, bally-5), 9, 5, nothing);
+			CollBox[0] = Entity(Vector2f(ballx+10, bally+1), 5, 9, nothing);
+			CollBox[1] = Entity(Vector2f(ballx-5, bally+1), 5, 9, nothing);
+			CollBox[2] = Entity(Vector2f(ballx+1, bally+10), 9, 5, nothing);
+			CollBox[3] = Entity(Vector2f(ballx+1, bally-5), 9, 5, nothing);
 			while(SDL_PollEvent(&event))
 			{
 				if(event.type == SDL_QUIT)
@@ -126,7 +127,7 @@ int main(int argv, char* args[])
 						velocityX = 0;
 				}
 			}
-			if(entities[4].CollidesWith(placeholders[0]) == false)
+			if(CollBox[3].CollidesWith(placeholders[0]) == false)
 			{
 				if(keystates[SDL_SCANCODE_W])
 				{
@@ -140,7 +141,7 @@ int main(int argv, char* args[])
 					velocityY = 0;
 				}
 			}
-			if(entities[3].CollidesWith(placeholders[0]) == false)
+			if(CollBox[2].CollidesWith(placeholders[0]) == false)
 			{
 				if(keystates[SDL_SCANCODE_S])
 				{
@@ -154,7 +155,7 @@ int main(int argv, char* args[])
 					velocityY = 0;
 				}
 			}
-			if(entities[2].CollidesWith(placeholders[0]) == false)
+			if(CollBox[1].CollidesWith(placeholders[0]) == false)
 			{
 				if(keystates[SDL_SCANCODE_A])
 				{
@@ -168,7 +169,7 @@ int main(int argv, char* args[])
 					velocityX = 0;
 				}
 			}
-			if(entities[1].CollidesWith(placeholders[0]) == false)
+			if(CollBox[0].CollidesWith(placeholders[0]) == false)
 			{
 				if(keystates[SDL_SCANCODE_D])
 				{
