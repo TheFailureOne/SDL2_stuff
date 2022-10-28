@@ -80,3 +80,9 @@ bool Entity::RightCollidesWith(Entity p)
 		return false;
 	}
 }
+
+void Entity::setPos(float x, float y)
+{
+	pos.x = x;
+	pos.y = y;
+}

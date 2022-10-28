@@ -20,6 +20,7 @@ public:
 	bool CollidesWith(Entity p);
 	bool LeftCollidesWith(Entity p);
 	bool RightCollidesWith(Entity p);
+	void setPos(float x, float y);
 	// bool CollidesWith(Entity p, int XstartPos, int XendPos, int YstartPos, int YendPos);
 private:
 	Vector2f pos;

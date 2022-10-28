@@ -57,12 +57,24 @@ int main(int argv, char* args[])
 	int placeholdersIN = 0;
 	std::vector<Entity> entities = {Entity(Vector2f(ballx, bally), 10, 10, pixel)};
 
-	std::vector<Entity> CollBox = {Entity(Vector2f(ballx+10, bally), 5, 10, nothing),
-								   Entity(Vector2f(ballx, bally), 5, 10, nothing),
-								   Entity(Vector2f(ballx, bally+10), 10, 5, nothing),
-								   Entity(Vector2f(ballx, bally), 10, 5, nothing)};
+	Entity CollBox[][4] = {Entity(Vector2f(-20, -20), 0, 0, pixel),
+						   Entity(Vector2f(-20, -20), 0, 0, pixel),
+						   Entity(Vector2f(-20, -20), 0, 0, pixel),
+						   Entity(Vector2f(-20, -20), 0, 0, pixel)};
 
-	std::vector<Entity> placeholders = {Entity(Vector2f(100, 100), 50, 50, pixel)};
+    int CollBoxRow = sizeof(CollBox)/sizeof(CollBox[0]);
+	int CollBoxCollumn = sizeof(CollBox[0])/sizeof(CollBox[0][0]);	
+
+	for(int i = 0; i < sizeof(entities)/sizeof(entities[0]); i++)
+	{
+		Entity ent = entities[i];
+		CollBox[i][0] = Entity(Vector2f(ent.getPos().x+ent.getWidth(), ent.getPos().y), 5, ent.getWidth(), pixel);
+		CollBox[i][1] = Entity(Vector2f(ent.getPos().x, ent.getPos().y), 5, ent.getWidth(), pixel);
+		CollBox[i][2] = Entity(Vector2f(ent.getPos().x, ent.getPos().y+ent.getLength()), ent.getLength(), 5, pixel);
+		CollBox[i][3] = Entity(Vector2f(ent.getPos().x+5, ent.getPos().y), ent.getLength(), 5, pixel);
+	}
+
+	std::vector<Entity> objects = {Entity(Vector2f(100, 100), 50, 50, pixel)};
 	std::vector<int> phX;
 	std::vector<int> phY;
 	// int phX[] = {0};
@@ -89,13 +101,35 @@ int main(int argv, char* args[])
 
 		while(accumulator >= dt)
 		{
-			ballx += velocityX;
-			bally += velocityY;
-			entities[0] = Entity(Vector2f(ballx, bally), 10, 10, pixel);
-			CollBox[0] = Entity(Vector2f(ballx+10, bally+1), 5, 9, nothing);
-			CollBox[1] = Entity(Vector2f(ballx-5, bally+1), 5, 9, nothing);
-			CollBox[2] = Entity(Vector2f(ballx+1, bally+10), 9, 5, nothing);
-			CollBox[3] = Entity(Vector2f(ballx+1, bally-5), 9, 5, nothing);
+			entities[0].setPos(entities[0].getPos().x + velocityX, entities[0].getPos().y + velocityY);
+			CollBoxRow = sizeof(CollBox)/sizeof(CollBox[0]);
+			CollBoxCollumn = sizeof(CollBox[0])/sizeof(CollBox[0][0]);	
+			for(int i = 0; i < CollBoxRow; i++)
+			{
+				for(int j = 0; j < CollBoxCollumn; j++)
+				{
+					if(j == 0)
+					{
+						CollBox[i][j].setPos(entities[i].getPos().x+entities[i].getWidth(), entities[i].getPos().y);
+					}
+					if(j == 1)
+					{
+						CollBox[i][j].setPos(entities[i].getPos().x-1, entities[i].getPos().y);
+					}
+					if(j == 2)
+					{
+						CollBox[i][j].setPos(entities[i].getPos().x, entities[i].getPos().y+entities[i].getLength());
+					}
+					if(j == 3)
+					{
+						CollBox[i][j].setPos(entities[i].getPos().x, entities[i].getPos().y-1);
+					}
+				}
+			}
+			// CollBox[0][0] = Entity(Vector2f(ballx+10, bally+1), 5, 9, nothing);
+			// CollBox[0][1] = Entity(Vector2f(ballx-5, bally+1), 5, 9, nothing);
+			// CollBox[0][2] = Entity(Vector2f(ballx+1, bally+10), 9, 5, nothing);
+			// CollBox[0][3] = Entity(Vector2f(ballx+1, bally-5), 9, 5, nothing);
 			while(SDL_PollEvent(&event))
 			{
 				if(event.type == SDL_QUIT)
@@ -127,7 +161,7 @@ int main(int argv, char* args[])
 						velocityX = 0;
 				}
 			}
-			if(CollBox[3].CollidesWith(placeholders[0]) == false)
+			if(CollBox[0][3].CollidesWith(objects[0]) == false)
 			{
 				if(keystates[SDL_SCANCODE_W])
 				{
@@ -141,7 +175,7 @@ int main(int argv, char* args[])
 					velocityY = 0;
 				}
 			}
-			if(CollBox[2].CollidesWith(placeholders[0]) == false)
+			if(CollBox[0][2].CollidesWith(objects[0]) == false)
 			{
 				if(keystates[SDL_SCANCODE_S])
 				{
@@ -155,7 +189,7 @@ int main(int argv, char* args[])
 					velocityY = 0;
 				}
 			}
-			if(CollBox[1].CollidesWith(placeholders[0]) == false)
+			if(CollBox[0][1].CollidesWith(objects[0]) == false)
 			{
 				if(keystates[SDL_SCANCODE_A])
 				{
@@ -169,7 +203,7 @@ int main(int argv, char* args[])
 					velocityX = 0;
 				}
 			}
-			if(CollBox[0].CollidesWith(placeholders[0]) == false)
+			if(CollBox[0][0].CollidesWith(objects[0]) == false)
 			{
 				if(keystates[SDL_SCANCODE_D])
 				{
@@ -183,17 +217,15 @@ int main(int argv, char* args[])
 					velocityX = 0;
 				}
 			}
-
-			entities[0] = Entity(Vector2f(ballx, bally), 10, 10, pixel);
 			accumulator -= dt;
 		}
 
 		const double alpha = accumulator / dt;
 
 		window.clear();
-		for (Entity& placehold : placeholders)
+		for (Entity& object : objects)
 		{
-			window.render(placehold);
+			window.render(object);
 		}
 		for (Entity& entity : entities)
 		{
