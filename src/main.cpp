@@ -19,9 +19,6 @@ double hireTimeInSeconds() {
 
 void isCollidingLeft(Entity p, Entity c);
 
-int velocityX = 0;
-int velocityY = 0;
-
 int main(int argv, char *args[]) {
   if (SDL_Init(SDL_INIT_VIDEO) > 0)
     std::cout << "FUCK FUCK FUCK IT'S NOT WORKING ABORT ABORT FUCK. SDL_ERROR: "
@@ -44,44 +41,30 @@ int main(int argv, char *args[]) {
 
   SDL_Texture *pixel = window.loadTexture("res/gfx/Pixel.png");
 
-  int ballx = 0;
-  int bally = 0;
-  std::vector<Entity> entities = {
-      Entity(Vector2f(ballx, bally), 10, 10, pixel)};
+  std::vector<Entity> entities = {Entity(Vector2f(0, 0), 10, 10, pixel),
+                                  Entity(Vector2f(100, 206), 10, 10, pixel)};
+  int EntityAmount = entities.size();
 
-  Entity CollBox[][4] = {Entity(Vector2f(-20, -20), 0, 0, pixel),
-                         Entity(Vector2f(-20, -20), 0, 0, pixel),
-                         Entity(Vector2f(-20, -20), 0, 0, pixel),
-                         Entity(Vector2f(-20, -20), 0, 0, pixel)};
-
-  int CollBoxRow = sizeof(CollBox) / sizeof(CollBox[0]);
-  int CollBoxCollumn = sizeof(CollBox[0]) / sizeof(CollBox[0][0]);
-  int EntityAmount = sizeof(entities) / sizeof(entities[0]);
-
-  for (int i = 0; i < EntityAmount; i++) {
-    Entity ent = entities[i];
-    CollBox[i][0] =
-        Entity(Vector2f(ent.getPos().x + ent.getWidth(), ent.getPos().y), 5,
-               ent.getWidth(), pixel);
-    CollBox[i][1] = Entity(Vector2f(ent.getPos().x, ent.getPos().y), 5,
-                           ent.getWidth(), pixel);
-    CollBox[i][2] =
-        Entity(Vector2f(ent.getPos().x, ent.getPos().y + ent.getLength()),
-               ent.getLength(), 5, pixel);
-    CollBox[i][3] = Entity(Vector2f(ent.getPos().x + 5, ent.getPos().y),
-                           ent.getLength(), 5, pixel);
-  }
-
-  std::vector<Entity> objects = {Entity(Vector2f(100, 100), 50, 50, pixel)};
-  std::vector<int> phX;
-  std::vector<int> phY;
-  // int phX[] = {0};
-  // int phY[] = {0};
+  std::vector<Entity> objects = {Entity(Vector2f(25, 25), 30, 30, pixel),
+                                 Entity(Vector2f(206, 25), 30, 30, pixel),
+                                 Entity(Vector2f(25, 206), 30, 30, pixel),
+                                 Entity(Vector2f(206, 206), 30, 30, pixel),
+                                 Entity(Vector2f(0, 0), 256, 1, pixel),
+                                 Entity(Vector2f(0, 0), 1, 256, pixel),
+                                 Entity(Vector2f(0, 256), 256, 1, pixel),
+                                 Entity(Vector2f(256, 0), 1, 256, pixel)};
   bool gameRunning = true;
 
   SDL_Event event;
 
   const Uint8 *keystates = SDL_GetKeyboardState(NULL);
+
+  entities[0].velocityX = 1;
+  entities[0].velocityY = 1;
+
+  entities[1].velocityX = 1;
+  entities[1].velocityY = 1;
+  entities[1].dirX = 1;
 
   while (gameRunning) {
     double newTime = hireTimeInSeconds();
@@ -98,31 +81,11 @@ int main(int argv, char *args[]) {
     // std::async(std::launch::async,isCollidingLeft,entities[0],entities[1]);
 
     while (accumulator >= dt) {
-      entities[0].setPos(entities[0].getPos().x + velocityX,
-                         entities[0].getPos().y + velocityY);
-      CollBoxRow = sizeof(CollBox) / sizeof(CollBox[0]);
-      CollBoxCollumn = sizeof(CollBox[0]) / sizeof(CollBox[0][0]);
-      for (int i = 0; i < CollBoxRow; i++) {
-        for (int j = 0; j < CollBoxCollumn; j++) {
-          if (j == 0) {
-            CollBox[i][j].setPos(entities[i].getPos().x +
-                                     entities[i].getWidth(),
-                                 entities[i].getPos().y);
-          }
-          if (j == 1) {
-            CollBox[i][j].setPos(entities[i].getPos().x - 1,
-                                 entities[i].getPos().y);
-          }
-          if (j == 2) {
-            CollBox[i][j].setPos(entities[i].getPos().x,
-                                 entities[i].getPos().y +
-                                     entities[i].getLength());
-          }
-          if (j == 3) {
-            CollBox[i][j].setPos(entities[i].getPos().x,
-                                 entities[i].getPos().y - 1);
-          }
-        }
+      // entities[0].velocityX = 1;
+      // entities[0].velocityY = 1;
+      for (Entity &ent : entities) {
+        ent.setPos(ent.getPos().x + (ent.velocityX * ent.dirX),
+                   ent.getPos().y + (ent.velocityY * ent.dirY));
       }
       while (SDL_PollEvent(&event)) {
         if (event.type == SDL_QUIT)
@@ -131,45 +94,46 @@ int main(int argv, char *args[]) {
         }
         if (SDL_KEYUP == event.type) {
           if (SDLK_w || SDLK_s == event.key.keysym.sym)
-            velocityY = 0;
+            entities[0].dirX = 0;
           if (SDLK_a || SDLK_d == event.key.keysym.sym)
-            velocityX = 0;
+            entities[0].dirY = 0;
         }
       }
-      if (CollBox[0][3].CollidesWith(objects[0]) == false) {
-        if (keystates[SDL_SCANCODE_W]) {
-          velocityY = -1;
-        }
-      } else {
-        if (velocityY < 0) {
-          velocityY = 0;
-        }
+      if (keystates[SDL_SCANCODE_W]) {
+        entities[0].dirY = -1;
       }
-      if (CollBox[0][2].CollidesWith(objects[0]) == false) {
-        if (keystates[SDL_SCANCODE_S]) {
-          velocityY = 1;
-        }
-      } else {
-        if (velocityY > 0) {
-          velocityY = 0;
-        }
+      if (keystates[SDL_SCANCODE_S]) {
+        entities[0].dirY = 1;
       }
-      if (CollBox[0][1].CollidesWith(objects[0]) == false) {
-        if (keystates[SDL_SCANCODE_A]) {
-          velocityX = -1;
-        }
-      } else {
-        if (velocityX < 0) {
-          velocityX = 0;
-        }
+
+      if (keystates[SDL_SCANCODE_A]) {
+        entities[0].dirX = -1;
       }
-      if (CollBox[0][0].CollidesWith(objects[0]) == false) {
-        if (keystates[SDL_SCANCODE_D]) {
-          velocityX = 1;
-        }
-      } else {
-        if (velocityX > 0) {
-          velocityX = 0;
+      if (keystates[SDL_SCANCODE_D]) {
+        entities[0].dirX = 1;
+      }
+      for (Entity &obj : objects) {
+        for (int i = 0; i < EntityAmount; i++) {
+          if (entities[i].LeftCollidesWith(obj)) {
+            if (entities[i].dirX > 0) {
+              entities[i].dirX = 0;
+            }
+          }
+          if (entities[i].RightCollidesWith(obj)) {
+            if (entities[i].dirX < 0) {
+              entities[i].dirX = 0;
+            }
+          }
+          if (entities[i].BottomCollidesWith(obj)) {
+            if (entities[i].dirY > 0) {
+              entities[i].dirY = 0;
+            }
+          }
+          if (entities[i].TopCollidesWith(obj)) {
+            if (entities[i].dirY < 0) {
+              entities[i].dirY = 0;
+            }
+          }
         }
       }
       accumulator -= dt;
